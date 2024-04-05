@@ -143,14 +143,14 @@
         window.location.reload();
       });
 
-      let url = "//spartacodingclub.shop/sparta_api/weather/seoul";
+      let url = "http://spartacodingclub.shop/sparta_api/weather/seoul";
 
       fetch(url)
         .then((res) => res.json())
         .then((data) => {
           let temp = data["temp"];
 
-          $("#AAA").text();
+          //$('#AAA').text();
 
           let temp_html = ``;
 
